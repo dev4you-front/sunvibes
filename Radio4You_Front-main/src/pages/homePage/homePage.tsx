@@ -1,7 +1,7 @@
 import Hero from "../../components/hero/Hero"
 import SponsorsSection from "../../components/sponsorsSection/SponsorsSection";
-import LatestArticles from "../../components/latestArticles/LatestArticles";
-import LatestPodcasts from "../../components/latestPodcasts/LatestPodcasts";
+// import LatestArticles from "../../components/latestArticles/LatestArticles";
+// import LatestPodcasts from "../../components/latestPodcasts/LatestPodcasts";
 import JamendoPlaylists from "../../components/jamendoPlaylists/JamendoPlaylists";
 
 export default function Homepage() {
@@ -10,8 +10,8 @@ export default function Homepage() {
             <Hero />
             <SponsorsSection />
             <JamendoPlaylists />
-            <LatestPodcasts />
-            <LatestArticles />
+            {/* <LatestPodcasts /> */}
+            {/* <LatestArticles /> */}
         </main>
     );
 }

@@ -53,6 +53,13 @@ function useJamendoPlaylist(params: FetchOpts) {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
+        // Vérifier si la clé API est disponible
+        if (!CLIENT_ID) {
+            setError("Clé API Jamendo non configurée");
+            setLoading(false);
+            return;
+        }
+
         let cancelled = false;
         setLoading(true);
         setError(null);

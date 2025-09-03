@@ -70,6 +70,12 @@ export default function EnDirectPage() {
     useEffect(() => {
         (async () => {
             try {
+                // Vérifier si la clé API est disponible
+                if (!RF_TOKEN) {
+                    setError("Clé API Radio France non configurée");
+                    return;
+                }
+
                 setError(null);
                 // 1) flux live
                 const brand = await getFranceInterLive();
